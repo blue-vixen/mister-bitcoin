@@ -1,0 +1,22 @@
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e9695c;
+    margin-bottom: 30px;
+    nav {
+        display: flex;
+        list-style-type: none;
+        a{
+            margin-inline-end: 10px;
+        }
+    }
+
+    .logo {
+        cursor: pointer;
+        font-family: 'Permanent Marker', cursive;
+    }
+
+  
+}

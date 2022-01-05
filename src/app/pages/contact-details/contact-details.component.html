@@ -1,0 +1,14 @@
+<section class="contact-details container">
+    <h1>Contact Details:</h1>
+    <section class="contact-card">
+        <img src="https://robohash.org/{{contact._id}}?set=set4" alt="">
+        <section class="info">
+            <h1>Name: {{contact.name}}</h1>
+            <p>Phone: {{contact.phone}}</p>
+            <p>Email {{contact.email}}</p>
+        </section>
+    </section>
+    <transfer-funds [contact]="contact" [user]="user"></transfer-funds>
+    <moves-list [contact]="contact" [user]="user"></moves-list>
+    <button (click)="onGoBack()">Go back</button>
+</section>

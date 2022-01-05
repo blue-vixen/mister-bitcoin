@@ -1,0 +1,13 @@
+<section class="home-page">
+
+    <section class="user-details">
+        <img src="https://robohash.org/{{user.name}}?set=set4" alt="">
+        <div class="info">
+            <h1>Welcome {{user.name}}</h1>
+            <h1>Current Balance: {{user.coins}}</h1>
+            <h1>Bitcoin Rate: {{bitcoinRate}}</h1>
+        </div>
+        <button (click)="onLogOut()">Log out</button>
+    </section>
+    <moves-list [user]="user"></moves-list>
+</section>
