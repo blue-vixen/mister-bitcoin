@@ -1,9 +1,0 @@
-<section class="moves-list" *ngIf="lastMoves.length > 0">
-    <h1>{{!contact ? 'Last 3 moves:': 'Moves history:'}}</h1>
-    <ul class="clean-list">
-        <li *ngFor="let move of lastMoves">
-            <p>Transferred {{move.amount}} coins to {{move.to}} at {{move.at|date: 'dd/MM/yyyy HH:mm'}}</p>
-
-        </li>
-    </ul>
-</section>
